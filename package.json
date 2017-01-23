@@ -1,0 +1,29 @@
+{
+  "name": "router-complex",
+  "version": "1.1.0",
+  "description": "Riot complex example",
+  "scripts": {
+    "test": "karma start",
+    "compile": "riot  app dist",
+    "watch": "riot -w   app dist",
+    "browsersync": "browser-sync start --server --files 'dist/*.js, app/*.html' --startPath app",
+    "serve": "parallelshell 'npm run watch' 'npm run browsersync'"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "karma": "^1.3.0",
+    "karma-mocha": "^1.3.0",
+    "karma-mocha-reporter": "^2.2.1",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-riot": "^2.0.0",
+    "mocha": "^3.1.2",
+    "riot": "^3.0.0",
+    "riot-route": "^3.0.0"
+  },
+    "devDependencies": {
+    "babel-plugin-external-helpers-2": "^6.3.13",
+    "browser-sync": "^2.18.2",
+    "parallelshell": "^2.0.0"
+  },
+  "license": "MIT"
+}
